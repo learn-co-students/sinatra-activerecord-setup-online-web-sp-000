@@ -1,3 +1,4 @@
+
 # Sinatra Activerecord Setup
 
 ## Objectives
