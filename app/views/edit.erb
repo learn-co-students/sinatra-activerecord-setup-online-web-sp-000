@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        .item {
+            display: flex;
+            flex: 1 1 200px;
+            width: 320px;
+            justify-content: space-between;
+            margin-bottom: .5em;
+        }
+    </style>
+  </head>
+  <body>
+  <h1>Edit Dog</h1>
+  <form method="post" action="/dogs/<%=@dog.id%>">
+      <input id="hidden" type="hidden" name="_method" value="patch"> 
+      <div class="item">
+          <label for="name">Dog name:</label>
+          <input id="name" type="text" name="dog[name]" value="<%=@dog.name%>" />
+      </div>
+
+      <div class="item">
+          <label for="breed">Dog breed:</label>
+          <input id="breed" type="text" name="dog[breed]" value="<%=@dog.breed%>" />
+      </div>
+      
+      <input type="submit" id="Submit" value="submit">
+  </form>
+  </body>
+</html>
+
