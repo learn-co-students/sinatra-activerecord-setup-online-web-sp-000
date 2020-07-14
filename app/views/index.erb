@@ -1,0 +1,5 @@
+<h1>Dogs</h1>
+<% @dogs.each do |dog| %>
+    <p><a href='/dogs/<%=dog.id.to_s%>'><%=dog.name%> - <%=dog.breed%></a> --- <a href='/dogs/<%=dog.id.to_s%>/edit'>Edit</a></p>
+<% end %>
+<a href='/dogs/new'>New dog</a>
