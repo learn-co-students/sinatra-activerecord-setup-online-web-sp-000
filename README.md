@@ -19,7 +19,7 @@ Fork and clone this repository to get started! We have a basic sinatra
 application stubbed out with an `app.rb` file acting as the controller.
 
 ### Adding Your Gems
-
+##
 Currently, a few gems are already present in our Gemfile:
 
 ```ruby
